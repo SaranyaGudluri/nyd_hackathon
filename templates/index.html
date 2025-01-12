@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query the Scriptures</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Svadhyaya</h1>
+        <form id="queryForm">
+            <label for="query">Enter your query:</label>
+            <textarea id="query" name="query" rows="4" required></textarea>
+
+            <label for="source">Select Source:</label>
+            <select id="source" name="source" required>
+                <option value="gita">Bhagavad Gita</option>
+                <option value="pys">Patanjali Yoga Sutras</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="results"></div> <!-- This is where the results will be displayed -->
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
